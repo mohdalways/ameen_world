@@ -33,3 +33,33 @@ margin-bottom: 0;
 .title_text{
   width :50%
 }
+.hero_element{
+  display: flex;
+  background-image: url("../img/jannat.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.title_text{
+  margin: 4em 0em 4em 5em;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+.title_pic{
+  margin-left: 5em;
+  
+}
+.me_hire{
+  font-weight 700;
+font-size: 1.15em;
+background-image: linear-Gradient(
+to right,
+rgb(255,151,115),
+rgb(255,109,80)
+);
+border: none;
+margin-top:10px;
+padding: 15px 40px;
+border-radius: 5px;
+text-transform: uppercase;
+
+}
