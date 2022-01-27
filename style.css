@@ -1,114 +1,173 @@
-body {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: "poppins",sans-serif;
+/* about section */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'josefin sans', Sans-Serif;
+    box-sizing: border-box;
+    background-image: url('/.jpg');
+    background-color: #060707BF;
 }
-.pic_jannat{
-  height: 100%;
-  width: 100%;
+.about{
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #191919;
+    
 }
-.welcome_tow{
-  font-size: 50px;
-  font-weight: 200;
-}
-.middle_title{
-  font-size: 50px;
-  font-weight 200;
-margin-bottom: 0;
-}
-
-.middle_text{
-  margin: 0;
-  width: 90%;
-  text-align: justify;
-  padding-bottom: 20px;
-}
-.jannat_name{
-  color: coral;
-  font-weight : 500;
+.about img{
+    height: auto;
+    width: 362px;
+    border-radius: 45%;
   
 }
-.title_pic,
-.title_text{
-  width :50%
+
+img{
+  box-shadow: 5px 8px 50px white;    opacity: 0.5;
 }
-.jannat_element{
-  display: flex;
-  background-image: url("../img/jannat.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
+
+.about-text{
+    width: 551px;
 }
-.title_text p{
-  margin: 4em 0em 4em 5em;
-  text-align: justify;
-  margin-bottom: 50px;
-}
-.title_pic{
-  margin-left: 5em;
+.main{
+    width: 1131px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   
 }
-.me_hire{
-  font-weight 700;
-font-size: 1.15em;
-background-image: linear-Gradient(
-to right,
-rgb(255,151,115),
-rgb(255,109,80)
-);
-border: none;
-margin-top:10px;
-padding: 15px 40px;
-border-radius: 10px;
-text-transform: uppercase;
-
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 21px;
 }
-.experience{
-  display: flex;
-  height: 100%;
-  background-image: url("../image/1.jpg");
-  background-repeat: no-repeat;
-  background-position: left;
-
+.about-text h3{
+     color: wheat;
+     font-size: 24px;
+     text-transform: capitalize;
+     margin-bottom: 24px;
+     letter-spacing: 2px;
+     
+}
+.programing{
+    color: #f9004d;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 23px;
+    margin-bottom: 44px;
   
 }
-.exp-one{
-  padding-left: 30px;
-  margin-left: 80px;
-  margin-right: 40px;
-  border-left: 7px solid;
-  border-image: linear-Gradient(180deg,lightsalmon,tomato);
-  border-image-slice: 1;
-  box-shadow: 20px 20px 5px grey;
+/* ::first-letter  */
+
+p::first-letter {
+font-size :30px;
+  color: #CB2ED6;
+  Font-family: cursive;
 }
-.exp-tow{
-  padding-left: 30px;
-  margin-left: 40px;
-  margin-right: 80px;
-  border-left: 7px solid;
-  border-image:linear-Gradient(180deg,blue,cyan);
-  border-image-slice: 1;
-  box-shadow: 8px 8px 40px grey;
+/* Add an arrow on hover:button */
+.button{
+  border-radius:10px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align:center;
+  font-size:28px;
+  padding: 40px;
+  width:300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
-.exp-title{
-  font-size: 40px;
-  font-weight: 500;
+.button span{
+  cursor: pointer ;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
-.exp-des{
-  font-weight:500;
-  color: coral;
+.button span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
-.exp-text{
-  text-align: justify;#42445A
-  padding:20px 30px 30px 0;
+.button:hover span{
+  padding-right: 20px;
+  
 }
-.exp-header{
-  margin-left: 80px;
-  font-size: 50px;
-  font-weight 200;
-  text-transform : capitalize;
+.button:hover span:after {
+  opacity: 1;
+  right : 0;
 }
-footer p{
-  padding-top: 30px;
-  text-align: center;
+/*  details section */
+.details {
+  padding: 40px;
+  margin: 30px;
+  margin-bottom: 10px;
+  border: 8px solid;
+  border-image: linear-Gradient(180deg, #ddd, cyan);
+  box-shadow : 5px 8px 50px #Ffffff;
+  color: #FFFFFF;
+  
 }
+/* table zebra striping */
+thead, th{
+    padding: 15px;
+}
+tbody tr:nth-child(odd) {
+  background-color: #ff33cc;
+  
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e495e4;
+}
+
+tbody tr {
+    padding: 15px;
+  
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+   background-color: #ff33cc;
+  
+}
+
+
+/* graphics and colors */
+table, thead, th{
+    padding: 10px ;
+    border-radius: 8px 8px 0 0;
+    color: white;
+}
+thead, tfoot {
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(1.jpg);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  
+}
+
+thead th, tfoot th, tfoot td {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  border: 0px solid purple;
+  
+  
+}
+td{
+    text-align: center;
+    color: #ddd;
+}
+.thead-a{
+    padding-top: 15px;
+    border: 1px solid blue;
+    padding-top: 20px;
+}
+
